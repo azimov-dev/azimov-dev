@@ -179,14 +179,16 @@ document.querySelectorAll('.contact-card').forEach((card, index) => {
 });
 
 // ========================================
-// Copy Email to Clipboard
+// Phone Contact Action
 // ========================================
-const emailCard = document.querySelector('.contact-card[href^="mailto:"]');
-if (emailCard) {
-    emailCard.addEventListener('click', (e) => {
-        const email = emailCard.href.replace('mailto:', '');
-        navigator.clipboard.writeText(email).then(() => {
-            showToast('Email copied to clipboard!');
+const phoneCard = document.querySelector('.contact-card[href^="tel:"]');
+if (phoneCard) {
+    phoneCard.addEventListener('click', (e) => {
+        const phone = '+998 (90) 123-45-67';
+        navigator.clipboard.writeText(phone).then(() => {
+            const currentLang = localStorage.getItem('portfolio_lang') || 'en';
+            const msg = currentLang === 'uz' ? 'Telefon raqam nusxalandi!' : 'Phone number copied to clipboard!';
+            showToast(msg);
         }).catch(() => {});
     });
 }
@@ -232,11 +234,65 @@ function showToast(message, duration = 3000) {
 }
 
 // ========================================
-// Highlight Items Animation
+// Telegram Bot Modal Gallery Logic
 // ========================================
-document.querySelectorAll('.highlight-item').forEach((item, index) => {
-    item.style.transitionDelay = `${index * 0.1}s`;
-    observer.observe(item);
+const botModal = document.getElementById('bot-gallery-modal');
+const openModalBtns = document.querySelectorAll('.open-bot-modal');
+const closeModalBtn = document.querySelector('.modal-close');
+const modalTabs = document.querySelectorAll('.modal-tab');
+const modalSlides = document.querySelectorAll('.modal-slide');
+
+function openBotModal() {
+    if (botModal) {
+        botModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeBotModal() {
+    if (botModal) {
+        botModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+openModalBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openBotModal();
+    });
+});
+
+if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', closeBotModal);
+}
+
+if (botModal) {
+    botModal.addEventListener('click', (e) => {
+        if (e.target === botModal) {
+            closeBotModal();
+        }
+    });
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && botModal && botModal.classList.contains('active')) {
+        closeBotModal();
+    }
+});
+
+modalTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const targetIndex = tab.getAttribute('data-target');
+        
+        modalTabs.forEach(t => t.classList.remove('active'));
+        modalSlides.forEach(s => s.classList.remove('active'));
+        
+        tab.classList.add('active');
+        if (modalSlides[targetIndex]) {
+            modalSlides[targetIndex].classList.add('active');
+        }
+    });
 });
 
 // ========================================
@@ -247,15 +303,194 @@ window.addEventListener('load', () => {
 });
 
 // ========================================
-// Console Easter Egg
+// Bilingual Internationalization (EN / UZ)
 // ========================================
-console.log(`
-%c azymv %c Software Developer
-`,
-    'background: #84cc16; color: #0a0a0f; padding: 10px 20px; font-size: 20px; font-weight: bold; border-radius: 5px 0 0 5px;',
-    'background: #1a1a25; color: #a1a1aa; padding: 10px 20px; font-size: 14px; border-radius: 0 5px 5px 0;'
-);
+const translations = {
+    en: {
+        nav_home: "Home",
+        nav_about: "About",
+        nav_skills: "Skills",
+        nav_projects: "Projects",
+        nav_contact: "Contact",
+        nav_cta: "Let's Talk",
+        hero_role: "SOFTWARE DEVELOPER",
+        hero_title_1: "Building digital",
+        hero_title_2: "experiences that",
+        hero_title_3: "make an impact",
+        hero_desc: "I'm Abdulg'affor Azimov, a passionate developer crafting modern web applications with clean code and creative solutions. Based in Tashkent, Uzbekistan.",
+        hero_view_projects: "View Projects",
+        hero_consultation: "Get Free Consultation",
+        stat_projects: "Projects",
+        stat_student: "Year Student",
+        stat_tech: "Technologies",
+        status_available: "Available for work",
+        about_label: "ABOUT ME",
+        about_title_1: "Passionate about creating",
+        about_title_2: "digital excellence",
+        about_years: "Years of Learning",
+        about_lead: "Hey! I'm a software developer who loves turning complex problems into elegant solutions.",
+        about_p1: "Currently pursuing my degree at Tashkent University of Information Technology, I specialize in building modern web applications using React, Node.js, and Python. I believe in writing code that's not just functional, but beautiful and maintainable.",
+        about_p2: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or diving into the latest AI developments.",
+        skills_label: "SKILLS & TECHNOLOGIES",
+        skills_title_1: "Technologies & tools",
+        skills_title_2: "I work with",
+        skills_more: "Also experienced with:",
+        skill_react: "Building interactive user interfaces",
+        skill_node: "Server-side JavaScript runtime",
+        skill_python: "Versatile programming language",
+        skill_ts: "Type-safe JavaScript",
+        skill_tailwind: "Utility-first CSS framework",
+        skill_next: "React framework for production",
+        skill_mongo: "NoSQL database",
+        skill_git: "Version control system",
+        projects_label: "FEATURED PROJECTS",
+        projects_title_1: "Some things I've",
+        projects_title_2: "built recently",
+        cat_webapp: "Web Application",
+        cat_indev: "In Development",
+        badge_coming_soon: "Coming Soon",
+        proj_new_title: "New Project",
+        proj_new_desc: "Exciting new project currently in development. Stay tuned for more innovative solutions and creative implementations.",
+        second_smile_desc: "Second Smile is a B2B SaaS CRM that provides dental clinics with their own complete management system through a subscription-based service. It brings patient records, appointments, treatment planning, services, payments, staff management, and clinic operations into one centralized platform, with different access levels for doctors, receptionists, administrators, and other staff.",
+        bot_desc: "A powerful Node.js Telegram bot that simplifies document creation by converting multiple images into customizable PDF files. Users can reorder, rotate, remove, and configure pages, choose output quality and page size, merge existing PDFs, and interact with the bot in English, Uzbek, or Russian.",
+        btn_screenshots: "More Screenshots (3)",
+        btn_try_telegram: "Try on Telegram",
+        btn_view_github: "View All on GitHub",
+        contact_label: "GET IN TOUCH",
+        contact_title_1: "Let's work together on",
+        contact_title_2: "your next project",
+        contact_desc: "I'm currently open to new opportunities and interesting projects. Feel free to reach out if you want to collaborate or just say hello!",
+        contact_phone: "Phone",
+        footer_brand: "Building digital experiences with passion and precision.",
+        footer_rights: "© 2026 Abdulg'affor Azimov. All rights reserved.",
+        modal_badge: "Telegram Bot Showcase",
+        modal_title: "Img2PDF Bot Screenshots",
+        tab_1: "1. Features Overview",
+        tab_2: "2. Bot Profile",
+        tab_3: "3. Converting PDF in Action",
+        caption_1: "Bot Welcome Screen & Feature Capabilities",
+        caption_2: "Bot Telegram Profile & Handle (@I_hate_Pdf_bot)",
+        caption_3: "Image to PDF Conversion & Interactive Menu Options",
+        btn_open_bot: "Open Bot in Telegram"
+    },
+    uz: {
+    nav_home: "Bosh sahifa",
+    nav_about: "Men haqimda",
+    nav_skills: "Ko‘nikmalar",
+    nav_projects: "Loyihalar",
+    nav_contact: "Bog‘lanish",
+    nav_cta: "Bog‘lanish",
 
-console.log('%c Hey there, fellow developer!', 'font-size: 16px; color: #84cc16;');
-console.log('%c Looking for a developer? Let\'s connect!', 'font-size: 14px; color: #a3e635;');
-console.log('%c azimovabdugaffor17@gmail.com', 'font-size: 12px; color: #84cc16;');
+    hero_role: "DASTURCHI",
+    hero_title_1: "Zamonaviy veb",
+    hero_title_2: "ilovalar va saytlar",
+    hero_title_3: "yarataman",
+    hero_desc: "Men Abdulg‘affor Azimov — Toshkentda faoliyat yurituvchi dasturchiman. Zamonaviy veb-ilovalarni toza kod va amaliy yechimlar asosida yarataman.",
+    hero_view_projects: "Loyihalarni ko‘rish",
+    hero_consultation: "Bepul maslahat",
+
+    stat_projects: "Loyiha",
+    stat_student: "Oylik ta’lim",
+    stat_tech: "Texnologiya",
+    status_available: "Yangi loyihalar uchun ochiq",
+
+    about_label: "MEN HAQIMDA",
+    about_title_1: "Kod yozaman,",
+    about_title_2: "muammo yechaman",
+    about_years: "Yil tajriba",
+    about_lead: "Men Abdulg‘affor — dasturchiman. Asosan web dasturlash bilan shug‘ullanaman va turli g‘oyalarni ishlaydigan loyihalarga aylantiraman.",
+    about_p1: "Hozir TATUda o‘qiyman. React va Node.js bilan ishlayman, turli loyihalar yaratish orqali amaliy tajribamni oshirib boryapman.",
+    about_p2: "Hozirgi maqsadim — real loyihalar ustida ko‘proq ishlash, yangi texnologiyalarni o‘rganish va dasturlash bo‘yicha tajribamni yanada rivojlantirish.",
+
+    skills_label: "KO‘NIKMALAR",
+    skills_title_1: "Ishlaydigan",
+    skills_title_2: "texnologiyalar",
+    skills_more: "Yana ishlataman:",
+    skill_react: "Interaktiv interfeyslar",
+    skill_node: "Backend ishlab chiqish",
+    skill_python: "Backend va avtomatlashtirish",
+    skill_ts: "Tiplangan JavaScript",
+    skill_tailwind: "Zamonaviy UI yaratish",
+    skill_next: "Production web-ilovalar",
+    skill_mongo: "NoSQL ma’lumotlar bazasi",
+    skill_git: "Versiya nazorati",
+
+    projects_label: "LOYIHALAR",
+    projects_title_1: "Ishlagan",
+    projects_title_2: "loyihalarim",
+    cat_webapp: "Veb-ilova",
+    cat_indev: "Ishlanmoqda",
+    badge_coming_soon: "Tez orada",
+
+    proj_new_title: "Yangi loyiha",
+    proj_new_desc: "Hozir yangi loyiha ustida ishlayapman. Yaqinda bu yerda batafsil ma’lumot bo‘ladi.",
+
+    second_smile_desc: "Second Smile — stomatologiya klinikalari uchun B2B SaaS CRM tizimi. Klinikalar obuna asosida tizimdan foydalanib, bemorlar, qabullar, davolash jarayonlari, xizmatlar, to‘lovlar va xodimlarni bitta platformadan boshqarishi mumkin.",
+
+    bot_desc: "Rasmlarni PDF faylga aylantiruvchi Telegram bot. Foydalanuvchilar sahifalarni tartiblashi, aylantirishi, o‘chirishi, sifat va formatni sozlashi hamda bir nechta PDF faylni birlashtirishi mumkin. Bot o‘zbek, ingliz va rus tillarida ishlaydi.",
+
+    btn_screenshots: "Skrinshotlar (3)",
+    btn_try_telegram: "Telegramda sinab ko‘rish",
+    btn_view_github: "GitHub’da ko‘rish",
+
+    contact_label: "BOG‘LANISH",
+    contact_title_1: "Keyingi loyihada",
+    contact_title_2: "birga ishlaymiz",
+    contact_desc: "Hozir yangi loyihalar, hamkorlik va qiziqarli takliflar uchun ochiqman. Bog‘lanish uchun istalgan qulay kanal orqali yozishingiz mumkin.",
+    contact_phone: "Telefon",
+
+    footer_brand: "Zamonaviy va foydali raqamli mahsulotlar yarataman.",
+    footer_rights: "© 2026 Abdulg‘affor Azimov. Barcha huquqlar himoyalangan.",
+
+    modal_badge: "Telegram bot",
+    modal_title: "Img2PDF Bot — skrinshotlar",
+    tab_1: "1. Asosiy sahifa",
+    tab_2: "2. Bot profili",
+    tab_3: "3. PDF yaratish",
+    caption_1: "Botning asosiy oynasi va mavjud imkoniyatlar",
+    caption_2: "Telegram’dagi bot profili (@I_hate_Pdf_bot)",
+    caption_3: "Rasmni PDF’ga aylantirish jarayoni va sozlamalar",
+    btn_open_bot: "Botni ochish"
+}
+};
+
+function setLanguage(lang) {
+    if (!translations[lang]) return;
+    
+    // Update active button state
+    const langBtns = document.querySelectorAll('.lang-btn');
+    langBtns.forEach(btn => {
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+
+    // Update element texts with data-i18n attributes
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
+    });
+
+    // Persist language choice
+    localStorage.setItem('portfolio_lang', lang);
+    document.documentElement.lang = lang;
+}
+
+// Language button event listeners
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        setLanguage(lang);
+    });
+});
+
+// Initialize saved language on load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('portfolio_lang') || 'en';
+    setLanguage(savedLang);
+});
