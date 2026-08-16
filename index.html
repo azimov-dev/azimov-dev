@@ -1,481 +1,747 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdulg'affor Azimov | Software Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
-</head>
-<body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Abdulg'affor Azimov | Software Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+        />
+    </head>
+    <body>
+        <div class="cursor-glow"></div>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    <span class="logo-text">azymv</span>
+                    <span class="logo-dot"></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact" class="nav-cta">Let's Talk</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-bracket">&lt;</span>
-                <span class="logo-text">azymv</span>
-                <span class="logo-bracket">/&gt;</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">
-                    <span class="wave">👋</span> Hello, I'm
-                </p>
-                <h1 class="hero-name">
-                    <span class="name-line">Abdulg'affor</span>
-                    <span class="name-line gradient-text">Azimov</span>
-                </h1>
-                <div class="hero-title-wrapper">
-                    <span class="hero-title-prefix">I'm a</span>
-                    <div class="typing-wrapper">
-                        <span class="typing-text"></span>
-                        <span class="cursor">|</span>
-                    </div>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span class="label-dot"></span>
+                    <span>SOFTWARE DEVELOPER</span>
                 </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Building digital</span>
+                    <span class="title-line">experiences that</span>
+                    <span class="title-line highlight">make an impact</span>
+                </h1>
                 <p class="hero-description">
-                    Crafting digital experiences with clean code and creative solutions.
-                    Passionate about building applications that make a difference.
+                    I'm Abdulg'affor Azimov, a passionate developer crafting
+                    modern web applications with clean code and creative
+                    solutions. Based in Tashkent, Uzbekistan.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
-                        <span>View My Work</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        <span>View Projects</span>
+                        <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                        >
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
                         </svg>
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <span>Get In Touch</span>
-                    </a>
+                    <a href="#contact" class="btn btn-ghost"
+                        >Get Free Consultation</a
+                    >
                 </div>
-                <div class="hero-social">
-                    <a href="https://github.com/azimov-dev" target="_blank" class="social-link" aria-label="GitHub">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/azimov-dev/" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <a href="https://instagram.com/_azymv" target="_blank" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                    </a>
-                    <a href="https://t.me/azimov_7" target="_blank" class="social-link" aria-label="Telegram">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-                    </a>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span
+                        ><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span
+                        ><span class="stat-plus">th</span>
+                        <span class="stat-label">Year Student</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span
+                        ><span class="stat-plus">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
+                <div class="visual-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span><span></span><span></span>
                         </div>
-                        <span class="window-title">developer.js</span>
+                        <span class="card-title">developer.ts</span>
                     </div>
-                    <div class="window-content">
-                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
-  <span class="code-property">name</span>: <span class="code-string">"Abdulg'affor Azimov"</span>,
-  <span class="code-property">role</span>: <span class="code-string">"Software Developer"</span>,
-  <span class="code-property">location</span>: <span class="code-string">"Tashkent, Uzbekistan"</span>,
-  <span class="code-property">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>],
-  <span class="code-property">passion</span>: <span class="code-string">"Building cool stuff"</span>,
-  <span class="code-function">code</span>: () => {
-    <span class="code-keyword">while</span>(<span class="code-boolean">true</span>) {
-      <span class="code-variable">eat</span>();
-      <span class="code-variable">sleep</span>();
-      <span class="code-variable">code</span>();
-      <span class="code-variable">repeat</span>();
-    }
-  }
+                    <div class="card-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Abdulg'affor"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-prop">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>],
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>,
+  <span class="code-prop">passion</span>: <span class="code-string">"Building cool stuff"</span>
 };</code></pre>
                     </div>
+                    <div class="card-status">
+                        <span class="status-dot"></span>
+                        <span>Available for work</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll down</span>
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">01.</span>
-                About Me
-            </h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        Hey there! I'm <span class="highlight">Abdulg'affor</span>, a passionate software developer
-                        based in Tashkent, Uzbekistan. I love turning complex problems into simple,
-                        beautiful, and intuitive solutions.
-                    </p>
-                    <p>
-                        Currently pursuing my degree at <span class="highlight">Tashkent University of Information Technology</span>,
-                        I spend my time exploring the endless possibilities of web development and software engineering.
-                        I believe in writing clean, maintainable code that not only works but tells a story.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source
-                        projects, or diving deep into the latest tech trends. I'm always eager to learn and grow,
-                        and I'm excited about the future of technology.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">4th</span>
-                            <span class="stat-label">Year Student</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Technologies</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">∞</span>
-                            <span class="stat-label">Passion</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <img src="photo.jpg" alt="Abdulg'affor Azimov" class="profile-photo">
-                        <div class="image-border"></div>
-                    </div>
+        <!-- Marquee Section -->
+        <div class="marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>Clean Code</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Modern Design</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Fast Performance</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>User Experience</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Responsive</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Scalable Solutions</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Clean Code</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Modern Design</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Fast Performance</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>User Experience</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Responsive</span>
+                    <span class="marquee-dot">◆</span>
+                    <span>Scalable Solutions</span>
+                    <span class="marquee-dot">◆</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">02.</span>
-                Skills & Technologies
-            </h2>
-            <p class="section-subtitle">
-                Here are some technologies I've been working with recently
-            </p>
-            <div class="skills-grid">
-                <div class="skill-card" data-skill="react">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/></svg>
-                    </div>
-                    <h3 class="skill-name">React</h3>
-                    <p class="skill-desc">Building interactive UIs</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 85%"></div>
-                    </div>
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">ABOUT ME</span>
+                    <h2 class="section-title">
+                        Passionate about creating<br /><span class="highlight"
+                            >digital excellence</span
+                        >
+                    </h2>
                 </div>
-                <div class="skill-card" data-skill="nodejs">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998 24c-.321 0-.641-.084-.922-.247L8.14 21.93c-.438-.245-.224-.332-.08-.383.561-.195.675-.24 1.273-.58.063-.035.145-.022.21.016l2.255 1.339c.082.045.198.045.275 0l8.79-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.192-.137-.242l-8.785-5.072c-.081-.047-.189-.047-.271 0L3.02 6.68c-.087.05-.141.143-.141.241v10.087c0 .096.054.189.135.235l2.409 1.392c1.307.654 2.108-.116 2.108-.89V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.112.255.253v9.958c0 1.742-.949 2.743-2.602 2.743-.508 0-.909 0-2.026-.551l-2.306-1.33C1.475 18.055 1 17.226 1 16.329V6.24c0-.895.475-1.731 1.248-2.178l8.787-5.082c.757-.435 1.765-.435 2.518 0l8.788 5.082c.774.447 1.251 1.282 1.251 2.178v10.088c0 .896-.477 1.729-1.251 2.175l-8.788 5.076c-.281.163-.601.247-.925.247h.17zm2.722-6.993c-3.854 0-4.66-1.77-4.66-3.255 0-.141.114-.253.255-.253h1.137c.127 0 .233.092.253.216.172 1.163.688 1.75 3.015 1.75 1.855 0 2.646-.42 2.646-1.404 0-.567-.224-.987-3.108-1.27-2.409-.238-3.899-.77-3.899-2.698 0-1.777 1.498-2.837 4.009-2.837 2.821 0 4.215.979 4.393 3.079.006.075-.02.148-.068.205-.048.056-.116.088-.189.088h-1.143c-.119 0-.225-.083-.252-.2-.28-1.243-.958-1.641-2.742-1.641-2.02 0-2.255.704-2.255 1.231 0 .639.278.825 3.012 1.186 2.708.358 3.993.865 3.993 2.768-.002 1.92-1.601 3.019-4.397 3.019v.016z"/></svg>
-                    </div>
-                    <h3 class="skill-name">Node.js</h3>
-                    <p class="skill-desc">Backend development</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-skill="python">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
-                    </div>
-                    <h3 class="skill-name">Python</h3>
-                    <p class="skill-desc">Scripting & Automation</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-skill="html">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
-                    </div>
-                    <h3 class="skill-name">HTML5</h3>
-                    <p class="skill-desc">Semantic markup</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-skill="css">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
-                    </div>
-                    <h3 class="skill-name">CSS3</h3>
-                    <p class="skill-desc">Styling & Animations</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-skill="tailwind">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
-                    </div>
-                    <h3 class="skill-name">Tailwind</h3>
-                    <p class="skill-desc">Utility-first CSS</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-skill="javascript">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
-                    </div>
-                    <h3 class="skill-name">JavaScript</h3>
-                    <p class="skill-desc">Dynamic functionality</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 88%"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-skill="git">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
-                    </div>
-                    <h3 class="skill-name">Git</h3>
-                    <p class="skill-desc">Version control</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 82%"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-other">
-                <h3>Other Technologies</h3>
-                <div class="tech-tags">
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">REST APIs</span>
-                    <span class="tech-tag">Express.js</span>
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">VS Code</span>
-                    <span class="tech-tag">Linux</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Figma</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">03.</span>
-                Featured Projects
-            </h2>
-            <p class="section-subtitle">
-                Here are some of the projects I've worked on
-            </p>
-            <div class="projects-grid">
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <span class="project-emoji">😊</span>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img
+                                src="photo.jpg"
+                                alt="Abdulg'affor Azimov"
+                                class="profile-photo"
+                            />
+                            <div class="image-accent"></div>
                         </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/azimov-dev/second-smile-project" target="_blank" class="project-link" aria-label="View on GitHub">
-                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                </a>
-                                <a href="https://second-smile.uz" target="_blank" class="project-link" aria-label="View Live Site">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                </a>
+                        <div class="experience-badge">
+                            <span class="badge-number">4+</span>
+                            <span class="badge-text"
+                                >Years of<br />Learning</span
+                            >
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p class="about-lead">
+                            Hey! I'm a software developer who loves turning
+                            complex problems into elegant solutions.
+                        </p>
+                        <p>
+                            Currently pursuing my degree at
+                            <strong
+                                >Tashkent University of Information
+                                Technology</strong
+                            >, I specialize in building modern web applications
+                            using React, Node.js, and Python. I believe in
+                            writing code that's not just functional, but
+                            beautiful and maintainable.
+                        </p>
+                        <p>
+                            When I'm not coding, you'll find me exploring new
+                            technologies, contributing to open-source projects,
+                            or diving into the latest AI developments.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                    />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>Clean & Maintainable Code</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                    />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>Modern Technologies</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                    />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>User-Centered Design</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                    />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>Continuous Learning</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <span class="project-label">Featured Project</span>
-                        <h3 class="project-title">Second Smile</h3>
-                        <p class="project-description">
-                            A heartwarming application designed to spread positivity and bring smiles to people's faces.
-                            Built with modern technologies to create an engaging and uplifting user experience.
-                        </p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Tailwind CSS</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Placeholder for more projects -->
-                <article class="project-card coming-soon">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <span class="project-emoji">🚀</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-label">Coming Soon</span>
-                        <h3 class="project-title">More Projects</h3>
-                        <p class="project-description">
-                            Exciting new projects are in development. Stay tuned for more innovative
-                            applications and creative solutions!
-                        </p>
-                        <div class="project-tech">
-                            <span>???</span>
-                            <span>???</span>
-                            <span>???</span>
-                        </div>
-                    </div>
-                </article>
+                </div>
             </div>
-            <div class="projects-cta">
-                <a href="https://github.com/azimov-dev" target="_blank" class="btn btn-outline">
-                    <span>View All Projects on GitHub</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">04.</span>
-                Education
-            </h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">Tashkent University of Information Technology</h3>
-                            <span class="timeline-date">2023 - Present</span>
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-label">SKILLS & TECHNOLOGIES</span>
+                    <h2 class="section-title">
+                        Tools I use to bring<br /><span class="highlight"
+                            >ideas to life</span
+                        >
+                    </h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up">
+                        <div class="skill-icon react">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"
+                                />
+                            </svg>
                         </div>
-                        <p class="timeline-subtitle">Bachelor's Degree in Information Technology</p>
-                        <p class="timeline-description">
-                            Currently in my 4th year, focusing on software development, algorithms,
-                            and modern web technologies. Actively participating in coding competitions
-                            and hackathons.
+                        <h3 class="skill-name">React</h3>
+                        <p class="skill-desc">
+                            Building interactive user interfaces
                         </p>
-                        <div class="timeline-tags">
-                            <span>Computer Science</span>
-                            <span>Software Engineering</span>
-                            <span>Web Development</span>
-                            <span>Artificial Intelligence</span>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="50"
+                    >
+                        <div class="skill-icon node">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.998 24c-.321 0-.641-.084-.922-.247L8.14 21.93c-.438-.245-.224-.332-.08-.383.561-.195.675-.24 1.273-.58.063-.035.145-.022.21.016l2.255 1.339c.082.045.198.045.275 0l8.79-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.192-.137-.242l-8.785-5.072c-.081-.047-.189-.047-.271 0L3.02 6.68c-.087.05-.141.143-.141.241v10.087c0 .096.054.189.135.235l2.409 1.392c1.307.654 2.108-.116 2.108-.89V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.112.255.253v9.958c0 1.742-.949 2.743-2.602 2.743-.508 0-.909 0-2.026-.551l-2.306-1.33C1.475 18.055 1 17.226 1 16.329V6.24c0-.895.475-1.731 1.248-2.178l8.787-5.082c.757-.435 1.765-.435 2.518 0l8.788 5.082c.774.447 1.251 1.282 1.251 2.178v10.088c0 .896-.477 1.729-1.251 2.175l-8.788 5.076c-.281.163-.601.247-.925.247h.17z"
+                                />
+                            </svg>
                         </div>
+                        <h3 class="skill-name">Node.js</h3>
+                        <p class="skill-desc">Server-side JavaScript runtime</p>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="skill-icon python">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-desc">Versatile programming language</p>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                    >
+                        <div class="skill-icon typescript">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">TypeScript</h3>
+                        <p class="skill-desc">Type-safe JavaScript</p>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div class="skill-icon tailwind">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Tailwind CSS</h3>
+                        <p class="skill-desc">Utility-first CSS framework</p>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="250"
+                    >
+                        <div class="skill-icon nextjs">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.572 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Next.js</h3>
+                        <p class="skill-desc">React framework for production</p>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <div class="skill-icon mongodb">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">MongoDB</h3>
+                        <p class="skill-desc">NoSQL database</p>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="350"
+                    >
+                        <div class="skill-icon git">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Git</h3>
+                        <p class="skill-desc">Version control system</p>
+                    </div>
+                </div>
+                <div class="skills-more">
+                    <span class="more-label">Also experienced with:</span>
+                    <div class="more-tags">
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>REST APIs</span>
+                        <span>GraphQL</span>
+                        <span>Linux</span>
+                        <span>Figma</span>
+                        <span>AWS</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">05.</span>
-                Get In Touch
-            </h2>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h3 class="contact-heading">Let's Build Something Amazing Together</h3>
-                    <p>
-                        I'm currently open to new opportunities and interesting projects.
-                        Whether you have a question, want to collaborate, or just want to say hello,
-                        my inbox is always open. I'll do my best to get back to you!
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">FEATURED PROJECTS</span>
+                    <h2 class="section-title">
+                        Some things I've<br /><span class="highlight"
+                            >built recently</span
+                        >
+                    </h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card featured" data-aos="fade-up">
+                        <div class="project-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?w=800&h=500&fit=crop"
+                                alt="Second Smile Project"
+                            />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/azimov-dev/second-smile-project"
+                                        target="_blank"
+                                        class="project-link"
+                                        title="View Code"
+                                    >
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                        >
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a
+                                        href="https://second-smile.uz"
+                                        target="_blank"
+                                        class="project-link"
+                                        title="Live Demo"
+                                    >
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        >
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                            />
+                                            <polyline points="15 3 21 3 21 9" />
+                                            <line
+                                                x1="10"
+                                                y1="14"
+                                                x2="21"
+                                                y2="3"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"
+                                    >Web Application</span
+                                >
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">Second Smile</h3>
+                            <p class="project-description">
+                                A heartwarming platform designed to spread
+                                positivity and connect people through meaningful
+                                interactions. Built with modern technologies for
+                                an engaging user experience.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article
+                        class="project-card"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="project-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop"
+                                alt="Coming Soon Project"
+                            />
+                            <div class="project-coming-soon">
+                                <span>Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category"
+                                    >In Development</span
+                                >
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">New Project</h3>
+                            <p class="project-description">
+                                Exciting new project currently in development.
+                                Stay tuned for more innovative solutions and
+                                creative implementations.
+                            </p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects-cta">
+                    <a
+                        href="https://github.com/azimov-dev"
+                        target="_blank"
+                        class="btn btn-outline"
+                    >
+                        <span>View All on GitHub</span>
+                        <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                        >
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-label">GET IN TOUCH</span>
+                    <h2 class="section-title">
+                        Let's work together on<br /><span class="highlight"
+                            >your next project</span
+                        >
+                    </h2>
+                    <p class="section-desc">
+                        I'm currently open to new opportunities and interesting
+                        projects. Feel free to reach out if you want to
+                        collaborate or just say hello!
                     </p>
                 </div>
-                <div class="contact-methods">
-                    <a href="mailto:azimovabdugaffor17@gmail.com" class="contact-card">
+                <div class="contact-grid">
+                    <a
+                        href="mailto:azimovabdugaffor17@gmail.com"
+                        class="contact-card"
+                        data-aos="fade-up"
+                    >
                         <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
                         </div>
                         <div class="contact-info">
                             <span class="contact-label">Email</span>
-                            <span class="contact-value">azimovabdugaffor17@gmail.com</span>
+                            <span class="contact-value"
+                                >azimovabdugaffor17@gmail.com</span
+                            >
                         </div>
+                        <svg
+                            class="contact-arrow"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
                     </a>
-                    <a href="https://github.com/azimov-dev" target="_blank" class="contact-card">
+                    <a
+                        href="https://github.com/azimov-dev"
+                        target="_blank"
+                        class="contact-card"
+                        data-aos="fade-up"
+                        data-aos-delay="50"
+                    >
                         <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
                         </div>
                         <div class="contact-info">
                             <span class="contact-label">GitHub</span>
                             <span class="contact-value">azimov-dev</span>
                         </div>
+                        <svg
+                            class="contact-arrow"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/azimov-dev/" target="_blank" class="contact-card">
+                    <a
+                        href="https://www.linkedin.com/in/azimov-dev/"
+                        target="_blank"
+                        class="contact-card"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
                         <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                />
+                            </svg>
                         </div>
                         <div class="contact-info">
                             <span class="contact-label">LinkedIn</span>
                             <span class="contact-value">azimov-dev</span>
                         </div>
+                        <svg
+                            class="contact-arrow"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
                     </a>
-                    <a href="https://instagram.com/_azymv" target="_blank" class="contact-card">
+                    <a
+                        href="https://t.me/azimov_7"
+                        target="_blank"
+                        class="contact-card"
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                    >
                         <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        </div>
-                        <div class="contact-info">
-                            <span class="contact-label">Instagram</span>
-                            <span class="contact-value">@_azymv</span>
-                        </div>
-                    </a>
-                    <a href="https://t.me/azimov_7" target="_blank" class="contact-card">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                                />
+                            </svg>
                         </div>
                         <div class="contact-info">
                             <span class="contact-label">Telegram</span>
                             <span class="contact-value">@azimov_7</span>
                         </div>
+                        <svg
+                            class="contact-arrow"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </a>
+                    <a
+                        href="https://instagram.com/_azymv"
+                        target="_blank"
+                        class="contact-card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Instagram</span>
+                            <span class="contact-value">@_azymv</span>
+                        </div>
+                        <svg
+                            class="contact-arrow"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text">
-                    Designed & Built by <span class="highlight">Abdulg'affor Azimov</span>
-                </p>
-                <p class="footer-copyright">
-                    © 2024 All rights reserved.
-                </p>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <span class="footer-logo">azymv</span>
+                        <p>
+                            Building digital experiences with passion and
+                            precision.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Abdulg'affor Azimov. All rights reserved.</p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
