@@ -23,31 +23,51 @@ if (cursorGlow) {
 // ========================================
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
+const navbar = document.querySelector('.navbar');
 
 if (mobileMenuBtn && navLinks) {
     mobileMenuBtn.addEventListener('click', () => {
-        mobileMenuBtn.classList.toggle('active');
+        const isOpen = mobileMenuBtn.classList.toggle('active');
         navLinks.classList.toggle('active');
+        if (navbar) {
+            navbar.classList.toggle('menu-open', isOpen);
+        }
+        document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenuBtn.classList.remove('active');
             navLinks.classList.remove('active');
+            if (navbar) {
+                navbar.classList.remove('menu-open');
+            }
+            document.body.style.overflow = '';
         });
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+            mobileMenuBtn.classList.remove('active');
+            navLinks.classList.remove('active');
+            if (navbar) {
+                navbar.classList.remove('menu-open');
+            }
+            document.body.style.overflow = '';
+        }
     });
 }
 
 // ========================================
 // Navbar Scroll Effect
 // ========================================
-const navbar = document.querySelector('.navbar');
-
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    if (navbar) {
+        if (window.pageYOffset > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
     }
 });
 
