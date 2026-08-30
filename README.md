@@ -1,5 +1,5 @@
 ## Hi there 👋
-<p align="center">
+<p align="right">
   <img src="https://api.boot.dev/v1/users/public/b3872489-eaed-49b9-b949-fa88666e968f/thumbnail" >
 </p>
 <!--
